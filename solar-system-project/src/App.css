@@ -1,38 +1,83 @@
-.App {
+body {
+  background-image: url('../src/images/background.png');
+  background-position: center;
+  color: white;
+  font-family: Tahoma , Geneva , Verdana , sans-serif;
+}
+
+header > h1 {
+  font-size: 6vw;
+  text-align: center;
+  text-shadow: rgba(226, 207, 98, 0.685) 1px 1px 3px;
+}
+
+.planets-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  background-color: rgba(2, 2, 2, 0.3);
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 2.5vw;
+  margin: 0 3vw;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.planets {
+  display: flex;
+  justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.planets-cards {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 250px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mission-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 3vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mission-card {
+  align-items: center;
+  background-color: rgba(2, 2, 2, 0.3);
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-around;
+  margin: 2vh 0;
+  width: 220px;
+}
+
+.mission-card > p {
+  font-size: 1.5vw;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.mercurio {
+  width: 5vw;
+}
+
+.venus, .terra, .urano, .netuno {
+  width: 9vw;
+}
+
+.marte {
+  width: 7vw;
+}
+
+.jupiter, .saturno {
+  width: 18vw;
 }
